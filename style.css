@@ -502,3 +502,131 @@ section p{
 }
 
 }
+/* ===========================
+   PREMIUM HERO UPGRADE
+=========================== */
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        135deg,
+        rgba(8,22,44,.25),
+        rgba(8,22,44,.05)
+    );
+    z-index:1;
+}
+
+.hero-tagline{
+    display:inline-block;
+    padding:10px 22px;
+    margin-bottom:25px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    color:#d4af37;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero-highlights{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.highlight{
+    min-width:180px;
+    padding:22px;
+    border-radius:18px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.12);
+    transition:.35s;
+}
+
+.highlight:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.12);
+}
+
+.highlight strong{
+    display:block;
+    font-size:30px;
+    color:#d4af37;
+    margin-bottom:8px;
+}
+
+.highlight span{
+    color:white;
+    font-size:15px;
+}
+
+.scroll-indicator{
+    position:absolute;
+    bottom:35px;
+    left:50%;
+    transform:translateX(-50%);
+    width:30px;
+    height:55px;
+    border:2px solid rgba(255,255,255,.6);
+    border-radius:30px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:8px;
+    z-index:2;
+}
+
+.scroll-indicator span{
+    width:6px;
+    height:10px;
+    border-radius:10px;
+    background:#d4af37;
+    animation:scrollDown 1.6s infinite;
+}
+
+@keyframes scrollDown{
+
+    0%{
+        opacity:0;
+        transform:translateY(0);
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        transform:translateY(18px);
+    }
+
+}
+
+@media(max-width:900px){
+
+.hero-highlights{
+    flex-direction:column;
+    align-items:center;
+}
+
+.highlight{
+    width:280px;
+}
+
+.hero-tagline{
+    font-size:13px;
+}
+
+}
