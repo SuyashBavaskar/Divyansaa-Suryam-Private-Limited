@@ -311,6 +311,11 @@ section p{
     font-size:24px;
     margin-bottom:15px;
 }
+.card h3 i{
+    color:#d4af37;
+    margin-right:10px;
+    font-size:22px;
+}
 
 .card p{
     color:#666;
