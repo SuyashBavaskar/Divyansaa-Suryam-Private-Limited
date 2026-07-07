@@ -387,12 +387,60 @@ section p{
 
 footer{
     background:#081629;
-    color:#cfcfcf;
-    text-align:center;
-    padding:30px 20px;
-    font-size:15px;
+    color:#ffffff;
+    padding:70px 8% 20px;
 }
 
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer-logo{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.footer-column h3,
+.footer-column h4{
+    color:#d4af37;
+    margin-bottom:18px;
+}
+
+.footer-column p{
+    color:#d6d6d6;
+    text-align:left;
+    margin:10px 0;
+    line-height:1.7;
+}
+
+.footer-column a{
+    display:block;
+    color:#d6d6d6;
+    text-decoration:none;
+    margin:10px 0;
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#d4af37;
+    padding-left:6px;
+}
+
+.footer-column i{
+    color:#d4af37;
+    margin-right:8px;
+}
+
+.footer-bottom{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    color:#bcbcbc;
+    font-size:14px;
+}
 /* ===========================
    SCROLL ANIMATION
 =========================== */
