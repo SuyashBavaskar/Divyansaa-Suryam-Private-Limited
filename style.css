@@ -280,3 +280,138 @@ section p{
     font-size:18px;
     line-height:1.8;
 }
+/* ===========================
+   BUSINESS GRID
+=========================== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:white;
+    padding:35px 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:all .35s ease;
+    border-top:5px solid #d4af37;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 22px 45px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#0e2342;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+#contact{
+    background:#0e2342;
+    color:white;
+}
+
+#contact h2{
+    color:#d4af37;
+}
+
+#contact p{
+    color:#f3f3f3;
+    margin:12px auto;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#081629;
+    color:#cfcfcf;
+    text-align:center;
+    padding:30px 20px;
+    font-size:15px;
+}
+
+/* ===========================
+   SCROLL ANIMATION
+=========================== */
+
+.card,
+section h2,
+section p{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1 !important;
+    transform:translateY(0) !important;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    nav{
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-logo{
+        width:130px;
+    }
+
+    section{
+        padding:80px 25px;
+    }
+
+    section h2{
+        font-size:34px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .gold-btn,
+    .outline-btn{
+        width:260px;
+        text-align:center;
+    }
+
+}
