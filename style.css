@@ -724,6 +724,53 @@ section p{
 
 }
 /* ===========================
+   INDUSTRIES WE SERVE
+=========================== */
+
+#industries{
+    background:#f8fafc;
+}
+
+.industry-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.industry-card{
+    background:#ffffff;
+    padding:35px 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    border-top:4px solid #d4af37;
+    transition:.35s;
+}
+
+.industry-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.industry-card i{
+    font-size:42px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.industry-card h3{
+    color:#0e2342;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.industry-card p{
+    color:#666;
+    font-size:16px;
+    line-height:1.7;
+}
+/* ===========================
    WHY CHOOSE US
 =========================== */
 
