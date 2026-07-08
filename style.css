@@ -108,7 +108,7 @@ nav a:hover::after{
 
     background:
     linear-gradient(rgba(8,22,44,.88),rgba(8,22,44,.90)),
-  url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=2400&q=90");
+url("hero-bg.png");
 
     background-size:cover;
     background-position:center;
