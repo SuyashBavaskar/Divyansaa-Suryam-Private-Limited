@@ -195,6 +195,9 @@ transform:translateY(0px);
     margin-bottom:10px;
 }
 
+.hero h1 span{
+    color:#d4af37;
+}
 .hero p{
     font-size:22px;
     margin-top:25px;
