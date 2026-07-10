@@ -106,9 +106,9 @@ nav a:hover::after{
     position:relative;
     overflow:hidden;
 
-    background:
-    linear-gradient(rgba(8,22,44,.88),rgba(8,22,44,.90)),
-url("hero-bg.png");
+   background:
+    linear-gradient(rgba(8,22,44,.50),rgba(8,22,44,.60)),
+    url("hero-bg.png");
     background-size:cover;
     background-position:center;
 }
